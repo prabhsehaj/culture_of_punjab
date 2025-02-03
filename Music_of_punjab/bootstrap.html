@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music_of_punjab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    .navbar {
+      position: fixed; 
+      top: 0;
+      left: 0; 
+      right: 0; 
+      background-color: #e3f2fd; 
+      padding: 10px 20px; 
+      z-index: 1000; 
+    }
+    .navbar img {
+      max-width: 70px; 
+      margin-right: 20px; 
+    }
+    .navbar-nav a {
+      color: black; 
+      font-weight: bold; 
+      transition: color 0.3s; 
+    }
+    .navbar-nav a:hover {
+      color: white;
+      background-color: black; 
+      border-radius: 5px; 
+    }
+    .section-header {
+      margin: 40px 0 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .hero-section {
+      background: url('images/background.png') no-repeat center center/cover; 
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    .card {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .custom-card {
+      border: 2px solid #e3f2fd; 
+    }
+    footer {
+      background-color: black; 
+      color: white;
+      padding: 20px 0;
+    }
+    .bg-light-custom {
+      background-color: #e3f2fd; 
+      padding: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#music">Music</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#instruments">Instruments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#artists">Artists</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Intro Section -->
+<div class="container-fluid bg-light-custom" style="margin-top: 0px;">
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h1 class="section-header"><bold>Soul of Punjab Culture</bold></h1>
+      <p>Punjabi music is a vibrant reflection of the culture and traditions of Punjab. It is characterized by lively rhythms, rich melodies, and powerful lyrics that express the joys and struggles of life. From folk songs to contemporary pop, Punjabi music has something for everyone.</p>
+    </div>
+  </section>
+</div>
+
+<!-- Header -->
+<div class="hero-section">
+  <div>
+    <blockquote class="blockquote">
+      <h2><p><strong>“Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.”</strong></p></h2>
+      <footer1 class="blockquote-footer text-white">From Pluto</footer1>
+    </blockquote>
+  </div>
+</div>
+
+<!-- Types of Music -->
+<section id="music" class="py-5">
+  <div class="container">
+    <h2 class="section-header">Different Types of Punjab Music</h2>
+    <div class="row g-4">
+      <!-- Folk -->
+      <div class="col-md-4">
+        <div class="card custom-card">
+          <div class="card-body text-center">
+            <h2 class="card-title"><strong><i>Folk Music</i></strong></strong></h2>
+            <p class="card-text">A genre that encompasses various traditional songs and stories passed down through generations, reflecting the culture of Punjab.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#folkModal">Explore More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Sufi -->
+      <div class="col-md-4">
+        <div class="card custom-card">
+          <div class="card-body text-center">
+            <h2 class="card-title"><strong><i>Sufi Music</i></strong></strong></h2>
+            <p class="card-text">A mystical form of music that conveys spiritual themes and emotions, often accompanied by devotional poetry.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sufiModal">Explore More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Pop -->
+      <div class="col-md-4">
+        <div class="card custom-card">
+          <div class="card-body text-center">
+            <h2 class="card-title"><strong><i>Punjabi Pop</i></strong></strong></h2>
+            <p class="card-text">A modern genre that blends traditional Punjabi sounds with contemporary music styles, popular among youth.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popModal">Explore More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Classical -->
+      <div class="col-md-4">
+        <div class="card custom-card">
+          <div class="card-body text-center">
+            <h2 class="card-title"><strong><i>Classical Music</i></strong></strong></h2>
+            <p class="card-text">Rich in history, Punjabi classical music is characterized by its intricate rhythms and melodies, often performed in traditional settings.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#classicalModal">Explore More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Bhangra -->
+      <div class="col-md-4">
+        <div class="card custom-card">
+          <div class="card-body text-center">
+            <h2 class="card-title"><strong><i>Bhangra</i></strong></strong></h2>
+            <p class="card-text">A lively form of music that accompanies the energetic Bhangra dance, celebrating harvests and joyful occasions.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bhangraModal">Explore More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Gidda -->
+      <div class="col-md-4">
+        <div class="card custom-card">
+          <div class="card-body text-center">
+            <h2 class="card-title"><strong><i>Gidda</i></strong></strong></h2>
+            <p class="card-text">Traditional women's folk music, characterized by its graceful rhythms and vibrant lyrics, often sung during celebrations.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#giddaModal">Explore More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modals -->
+<!-- Folk Music Modal -->
+<div class="modal fade" id="folkModal" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="folkModalLabel">Folk Music</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Punjabi folk music is a window into the traditions and everyday life of Punjab. Songs often tell tales of love, heroism, and rural life, passed down through generations.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sufi Music Modal -->
+<div class="modal fade" id="sufiModal" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sufiModalLabel">Sufi Music</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Sufi music is a spiritual and devotional art form that transcends cultural boundaries. Its poetic lyrics often explore themes of divine love and unity. Instruments like the harmonium and tabla accompany soulful singing, creating an atmosphere of serenity and reflection.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Punjabi Pop Modal -->
+<div class="modal fade" id="popModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="popModalLabel">Punjabi Pop</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Punjabi Pop is a fusion genre that combines traditional Punjabi music elements with modern beats and instruments. This vibrant genre often explores themes like love, youth, and celebration, making it highly popular among the younger generation worldwide.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Classical Music Modal -->
+<div class="modal fade" id="classicalModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="classicalModalLabel">Classical Music</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Punjabi Classical Music is a timeless art form deeply rooted in Indian traditions. It features intricate melodies, rhythms, and poetic compositions. Often performed in formal settings, it uses instruments like the sitar and tabla, showcasing the richness of Punjabi heritage.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bhangra Modal -->
+<div class="modal fade" id="bhangraModal" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bhangraModalLabel">Bhangra</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Bhangra is a high-energy music and dance form that celebrates joyous occasions like harvests. Its vibrant beats are typically played on instruments like the dhol, with synchronized dance moves enhancing the celebratory atmosphere.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gidda Modal -->
+<div class="modal fade" id="giddaModal" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="giddaModalLabel">Gidda</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Gidda is a traditional Punjabi music style performed by women. It features storytelling, humor, and vibrant lyrics. The accompanying graceful dance moves are an essential part of weddings and festivals.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Instruments -->
+<section id="instruments" class="py-5 bg-light-custom">
+  <div class="container">
+    <h2 class="section-header">Traditional Instruments</h2>
+    <div class="row g-4">
+      <!-- Dhol -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/dhol.png" class="card-img-top" alt="Dhol">
+          <div class="card-body text-center">
+            <h5 class="card-title">Dhol</h5>
+            <p class="card-text">A double-headed drum that provides the heartbeat of Punjabi music, essential for the  dance and celebration.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Tumbi -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/tumbi.png" class="card-img-top" alt="Tumbi">
+          <br>
+          <br>
+          <div class="card-body text-center">
+            <h5 class="card-title">Tumbi</h5>
+            <p class="card-text">A single-stringed instrument played in folk music, known for its high-pitched sound and rhythmic patterns.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Harmonium -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/harmonium.png" class="card-img-top" alt="Harmonium">
+          <div class="card-body text-center">
+            <h5 class="card-title">Harmonium</h5>
+            <p class="card-text">A keyboard instrument that adds a melodic layer to folk and classical music, commonly used in many Punjabi songs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Artists -->
+<section id="artists" class="py-5">
+  <div class="container">
+    <h2 class="section-header">Famous Punjabi Artists</h2>
+    <div class="row g-4">
+      <!-- Artist 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/artist1.jpg" class="card-img-top" alt="Artist 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Gurdas Maan</h5>
+            <p class="card-text">A legendary figure in Punjabi music, known for his soulful singing and impactful lyrics.</p>
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#gurdasMusic">Popular Music</button>
+            <div id="gurdasMusic" class="collapse">
+              <dl>
+                <dt>Song 1:</dt>
+                <dd>Challa</dd>
+                <dt>Song 2:</dt>
+                <dd>Ki banu duniya da</dd>
+                <dt>Song 3:</dt>
+                <dd>Aisa des hai mera </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Artist 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/artist2.png" class="card-img-top" alt="Artist 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Satinder Sartaj</h5>
+            <p class="card-text">
+              A celebrated Punjabi singer and songwriter, known for his soulful melodies and thought-provoking lyrics..</p>
+              <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#satinderMusic">Popular Music</button>
+              <div id="satinderMusic" class="collapse">
+                <dl>
+                  <dt>Song 1:</dt>
+                  <dd>Sajjan Raazi</dd>
+                  <dt>Song 2:</dt>
+                  <dd>Udaarian</dd>
+                  <dt>Song 3:</dt>
+                  <dd>Ikko-mikke</dd>
+                </dl>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- Artist 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/artist3.jpg" class="card-img-top" alt="Artist 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sidhu Moosewala</h5>
+            <p class="card-text">
+              A prominent Punjabi singer,lyricist and actor known for his powerful voice and impactful storytelling in music.</p>
+              <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#sidhuMusic">Popular Music</button>
+              <div id="sidhuMusic" class="collapse">
+                <dl>
+                  <dt>Song 1:</dt>
+                  <dd>295</dd>
+                  <dt>Song 2:</dt>
+                  <dd>Same beef</dd>
+                  <dt>Song 3:</dt>
+                  <dd>Never fold</dd>
+                </dl>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="evolution" class="py-5">
+  <div class="container">
+    <h2 class="section-header">Evolution of Punjabi Music</h2>
+    <p>
+      Punjabi music has a rich history that has evolved over centuries. Traditionally, it encompassed folk songs that were sung during harvest festivals, weddings, and religious ceremonies. With the advent of modern technology and the influence of global music trends, Punjabi music has transformed into various genres such as Bhangra, Pop, and Sufi. Artists are now blending traditional sounds with modern beats, creating a unique fusion that resonates with younger audiences while keeping the essence of Punjabi culture alive. This evolution continues to inspire new generations of musicians and fans alike.
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container text-center">
+    <p>&copy; 2025 Punjabi Music Traditions. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
